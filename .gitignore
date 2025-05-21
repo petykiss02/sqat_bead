@@ -1,1 +1,3 @@
 .idea
+tests/build
+tests/.gradle
