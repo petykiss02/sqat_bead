@@ -19,7 +19,10 @@ public class SeleniumTest {
     private final By passwordInput = By.id("Password");
     private final By loginButton = By.xpath("//button[text()='Log in']");
 
-    private final By logoutLink = By.xpath("//a[text()='Logout']");
+    private final By logoutLink = By.xpath(
+        "//li[contains(@class,'nav-item')]" +
+        "//a[@href='/logout' and text()='Logout']"
+    );
 
     private final String dashboardTitle = "Dashboard / nopCommerce administration";
 
